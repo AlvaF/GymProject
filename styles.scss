@@ -234,4 +234,68 @@ main {
             }
         }
     }
+
+    .contacts {
+        background: #161616;
+        padding-bottom: 5%;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            .adress {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .location {
+                    li {
+                        list-style-type: none;
+                        font-family: 'Mako';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 32px;
+                        line-height: 42px;
+                        color: #FFFFFF;
+
+                        img {
+                            margin-right: 2%;
+                        }
+
+                        &:not(:first-child) {
+                            margin-top: 2%;
+                        }
+                    }
+                }
+
+                .social {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: #161616;
+
+    .container {
+        padding: 2% 0;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+
+            font-family: 'Mako';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        }
+    }
 }
